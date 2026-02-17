@@ -62,4 +62,10 @@ footer {
   transform: translateY(-5px);
   background: #1e293b;
 }
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+}
+
 
