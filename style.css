@@ -291,7 +291,29 @@ body {
   background: rgba(255,255,255,0.05);
   padding: 25px;
   border-radius: 14px;
+} 
+.hire {
+  background: #6d5bd0;
+  padding: 60px 10%;
+  color: #fff;
 }
+
+.hire-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hire-btn {
+  background: #fff;
+  color: #6d5bd0;
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
 
 
 
