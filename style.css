@@ -173,5 +173,54 @@ body {
     width: 220px;
     height: 280px;
   }
+} /* ================= SKILLS SECTION ================= */
+
+.skills {
+  background: #f8fafc;
+  padding: 100px 10%;
+  text-align: center;
 }
+
+.section-subtitle {
+  color: #7c3aed;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 38px;
+  margin-bottom: 60px;
+  color: #0f172a;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.skill-card {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+}
+
+.skill-card h4 {
+  color: #38bdf8;
+  margin-bottom: 12px;
+  font-size: 20px;
+}
+
+.skill-card p {
+  color: #475569;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
 
