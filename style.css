@@ -64,11 +64,6 @@
   transform: translateY(0);
 }
 
-/* Programming default ochiq */
-.service-card.active .service-text {
-  opacity: 1;
-  transform: translateY(0);
-}
 
 
 /* hover animatsiya */
