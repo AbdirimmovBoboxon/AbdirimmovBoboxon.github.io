@@ -111,77 +111,54 @@ body {
 
 /* SERVICES */
 .services {
-  background: #ffffff;
-  padding: 120px 10%;
+  background: #fff;
+  padding: 100px 10%;
   text-align: center;
 }
 
 .section-subtitle {
   color: #7c3aed;
-  font-size: 14px;
-  margin-bottom: 8px;
 }
 
 .section-title {
   font-size: 36px;
-  color: #6d28d9;
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
 }
 
 .service-card {
   background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 18px;
-  padding: 50px 30px;
-  transition: all 0.35s ease;
-  position: relative;
-  overflow: hidden;
+  border-radius: 16px;
+  padding: 40px 20px;
+  transition: all 0.3s ease;
   cursor: pointer;
 }
 
-.service-icon {
-  font-size: 42px;
-  margin-bottom: 25px;
+.service-card .icon {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .service-card h3 {
   color: #6d28d9;
-  font-size: 20px;
   margin-bottom: 10px;
 }
 
-.service-text {
-  font-size: 15px;
+.service-card p {
   color: #475569;
-  line-height: 1.6;
-  opacity: 0;
-  transform: translateY(20px);
-  transition: all 0.35s ease;
+  font-size: 14px;
 }
 
-/* HOVER EFFECT – rasmdagidek */
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
-
-.service-card:hover .service-text {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Programming card default ochiq (rasmdagidek) */
-.service-card.active .service-text {
-  opacity: 1;
-  transform: translateY(0);
-}
-
 
 /* HIRE */
 .hire {
