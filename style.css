@@ -6,7 +6,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0f172a, #020617);
+  background: #0f172a;
   color: #fff;
 }
 
@@ -14,42 +14,19 @@ body {
 .hero {
   min-height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   padding: 80px 10%;
   gap: 50px;
 }
 
-.hero-content {
-  max-width: 600px;
-}
-
-.hello {
-  color: #38bdf8;
-}
-
-.hero h1 {
-  font-size: 48px;
-}
-
 .hero h1 span {
-  color: #38bdf8;
-}
-
-.hero h2 {
-  margin: 15px 0;
-  color: #cbd5f5;
+  color: #7c6bd6;
 }
 
 .subtitle {
-  margin-bottom: 30px;
-  line-height: 1.6;
+  margin: 20px 0;
   color: #cbd5f5;
-}
-
-.hero-buttons {
-  display: flex;
-  gap: 15px;
 }
 
 .btn {
@@ -57,25 +34,24 @@ body {
   border-radius: 30px;
   text-decoration: none;
   border: none;
-  cursor: pointer;
 }
 
 .btn.primary {
-  background: #38bdf8;
-  color: #020617;
+  background: #7c6bd6;
+  color: #fff;
 }
 
 .btn.outline {
-  border: 2px solid #38bdf8;
-  color: #38bdf8;
+  border: 2px solid #7c6bd6;
+  color: #7c6bd6;
 }
 
 .hero-image img {
-  width: 300px;
-  height: 300px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #38bdf8;
+  border: 4px solid #7c6bd6;
 }
 
 /* ABOUT */
@@ -96,19 +72,6 @@ body {
   border-radius: 20px;
 }
 
-.about-content h3 {
-  color: #7c3aed;
-}
-
-.about-content h2 {
-  margin: 10px 0 20px;
-}
-
-.about-content p {
-  margin-bottom: 15px;
-  line-height: 1.6;
-}
-
 /* SERVICES */
 .services {
   background: #fff;
@@ -117,33 +80,36 @@ body {
 }
 
 .section-subtitle {
-  color: #7c3aed;
+  color: #7c6bd6;
 }
 
 .section-title {
   font-size: 36px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 .services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
 }
 
 .service-card {
-  padding: 40px 30px;
-  border-radius: 20px;
-  background: #f8fafc;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 50px 20px;
   transition: 0.3s;
 }
 
-.service-card span {
-  font-size: 30px;
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .service-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
 }
 
 /* HIRE */
