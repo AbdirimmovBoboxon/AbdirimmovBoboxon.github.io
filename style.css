@@ -107,29 +107,54 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  padding: 0 5%;
 }
 
 .service-card {
-  background: transparent;
-  border: none;
-  padding: 40px 20px;
-  text-align: center;
-  transition: none;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 14px;
+  height: 260px;
+  padding: 45px 25px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s;
 }
 
-.service-icon {
-  font-size: 64px;
-  margin-bottom: 24px;
+.service-card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.service-card .icon {
+  font-size: 42px;
   color: #6c5ce7;
-  line-height: 1;
+  margin-bottom: 20px;
 }
 
 .service-card h3 {
-  color: #020617;
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0;
+  color: #6c5ce7;
+  transition: 0.4s;
+}
+
+.service-card .desc {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  bottom: 30px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s;
+  font-size: 14px;
+  color: #555;
+}
+
+.service-card:hover h3 {
+  transform: translateY(-10px);
+}
+
+.service-card:hover .desc {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* HIRE */
