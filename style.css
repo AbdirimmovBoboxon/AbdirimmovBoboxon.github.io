@@ -1,3 +1,4 @@
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,17 +7,40 @@
 }
 
 body {
-  background: #ffffff;
-  color: #111;
+  background: #0f172a;
+  color: #ffffff;
+  line-height: 1.6;
 }
 
-/* HERO */
+a {
+  text-decoration: none;
+}
+
+/* ================= BUTTONS ================= */
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.btn.primary {
+  background: #7c6bd6;
+  color: #fff;
+}
+
+.btn.outline {
+  border: 2px solid #7c6bd6;
+  color: #7c6bd6;
+}
+
+/* ================= HERO ================= */
 .hero {
   min-height: 100vh;
+  padding: 80px 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 10%;
   gap: 60px;
 }
 
@@ -24,51 +48,49 @@ body {
   max-width: 520px;
 }
 
+.hello {
+  color: #7c6bd6;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
 .hero h1 span {
-  color: #6c5ce7;
+  color: #7c6bd6;
+}
+
+.hero h2 {
+  font-size: 22px;
+  margin-top: 10px;
+  color: #cbd5f5;
 }
 
 .subtitle {
   margin: 20px 0;
-  color: #555;
+  color: #cbd5f5;
 }
 
 .hero-buttons {
+  margin-top: 25px;
   display: flex;
   gap: 15px;
-  margin-top: 25px;
-}
-
-.btn {
-  padding: 12px 28px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.btn.primary {
-  background: #6c5ce7;
-  color: #fff;
-}
-
-.btn.outline {
-  border: 2px solid #6c5ce7;
-  color: #6c5ce7;
 }
 
 /* HERO IMAGE */
 .hero-image img {
-  width: 340px;
-  height: auto;
+  width: 320px;
   border-radius: 12px;
   object-fit: cover;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
 }
 
-/* ABOUT */
+/* ================= ABOUT ================= */
 .about {
+  background: #ffffff;
+  color: #020617;
   padding: 120px 10%;
-  background: #f9f9ff;
 }
 
 .about-container {
@@ -87,27 +109,150 @@ body {
   max-width: 520px;
 }
 
-.section-subtitle {
+.about-content h3 {
   color: #777;
   font-size: 14px;
 }
 
 .about-content h2 {
   font-size: 36px;
-  color: #6c5ce7;
+  color: #7c6bd6;
   margin: 10px 0 20px;
 }
 
-/* RESPONSIVE */
+.about-content p {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* ================= SERVICES ================= */
+.services {
+  background: #ffffff;
+  color: #020617;
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.section-subtitle {
+  color: #777;
+  font-size: 14px;
+}
+
+.section-title {
+  font-size: 38px;
+  color: #7c6bd6;
+  margin-bottom: 60px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 25px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+  transition: 0.4s;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  color: #7c6bd6;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================= HIRE ================= */
+.hire {
+  background: #7c6bd6;
+  padding: 60px 10%;
+}
+
+.hire-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hire-text h3 {
+  font-size: 24px;
+}
+
+.hire-text p {
+  color: #e5e7ff;
+}
+
+.hire-btn {
+  background: #ffffff;
+  color: #020617;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: 500;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+  background: #ffffff;
+  color: #020617;
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 50px auto 0;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+/* ================= RESPONSIVE ================= */
 @media (max-width: 900px) {
   .hero,
-  .about-container {
+  .about-container,
+  .hire-content {
     flex-direction: column;
     text-align: center;
   }
 
-  .hero-image img,
-  .about-image img {
-    width: 280px;
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    flex-direction: column;
   }
 }
