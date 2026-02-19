@@ -81,11 +81,13 @@ body {
 
 .section-subtitle {
   color: #7c6bd6;
+  font-weight: 500;
 }
 
 .section-title {
   font-size: 36px;
-  margin-bottom: 60px;
+  margin: 10px 0 60px;
+  color: #020617;
 }
 
 .services-grid {
@@ -94,23 +96,36 @@ body {
   gap: 30px;
 }
 
+/* CARD */
 .service-card {
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 50px 20px;
-  transition: 0.3s;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
+/* ICON */
 .service-icon {
-  font-size: 40px;
+  font-size: 42px;
   margin-bottom: 20px;
+  color: #7c6bd6;
 }
 
+/* TITLE */
+.service-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #020617;
+}
+
+/* HOVER */
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
 }
+
 
 /* HIRE */
 .hire {
